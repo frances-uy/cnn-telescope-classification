@@ -1,0 +1,207 @@
+Experiment 5
+Round 2
+Wednesday July 10 2024 5:00 PM HST
+
+Results
+
+**With complete dataset now**
+
+/home/frances.uy/.conda/envs/tf_env/bin/python /home/frances.uy/pycharm-projects/cloud_models/transfer_learning_4.py 
+2024-07-10 15:05:16.482324: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-07-10 15:05:16.492866: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:479] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-07-10 15:05:16.507985: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:10575] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-07-10 15:05:16.508012: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1442] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-07-10 15:05:16.517457: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-07-10 15:05:17.043957: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/home/frances.uy/.conda/envs/tf_env/lib/python3.9/site-packages/requests/__init__.py:86: RequestsDependencyWarning: Unable to find acceptable character detection dependency (chardet or charset_normalizer).
+  warnings.warn(
+Contents of data directory:
+1_clear
+2_cirrus
+3_cumulus
+4_fogvirgas
+Found 160 images belonging to 4 classes.
+Found 40 images belonging to 4 classes.
+Train generator length: 20
+Validation generator length: 5
+2024-07-10 15:05:18.108298: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1928] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 9744 MB memory:  -> device: 0, name: NVIDIA RTX A2000 12GB, pci bus id: 0000:65:00.0, compute capability: 8.6
+Training final dense layer...
+Epoch 1/20
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1720659924.174958  367239 service.cc:145] XLA service 0x7f74040144c0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+I0000 00:00:1720659924.174983  367239 service.cc:153]   StreamExecutor device (0): NVIDIA RTX A2000 12GB, Compute Capability 8.6
+2024-07-10 15:05:24.304299: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:268] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+2024-07-10 15:05:24.939437: I external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:465] Loaded cuDNN version 8907
+I0000 00:00:1720659927.449486  367239 device_compiler.h:188] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+20/20 ━━━━━━━━━━━━━━━━━━━━ 49s 2s/step - accuracy: 0.4239 - loss: 1.3641 - val_accuracy: 0.4500 - val_loss: 1.0123
+Epoch 2/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 36s 2s/step - accuracy: 0.6889 - loss: 0.6538 - val_accuracy: 0.5250 - val_loss: 1.1897
+Epoch 3/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 31s 2s/step - accuracy: 0.8231 - loss: 0.4934 - val_accuracy: 0.4750 - val_loss: 1.2552
+Epoch 4/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 34s 2s/step - accuracy: 0.8769 - loss: 0.4109 - val_accuracy: 0.5000 - val_loss: 1.2817
+Epoch 5/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.8529 - loss: 0.3581 - val_accuracy: 0.5750 - val_loss: 1.1094
+Epoch 6/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.8838 - loss: 0.3400 - val_accuracy: 0.6000 - val_loss: 0.9514
+Epoch 7/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.8931 - loss: 0.2806 - val_accuracy: 0.5750 - val_loss: 1.0046
+Epoch 8/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.8540 - loss: 0.3458 - val_accuracy: 0.6500 - val_loss: 0.9255
+Epoch 9/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9367 - loss: 0.2152 - val_accuracy: 0.6500 - val_loss: 0.9312
+Epoch 10/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9298 - loss: 0.2534 - val_accuracy: 0.6750 - val_loss: 0.9572
+Epoch 11/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9218 - loss: 0.2148 - val_accuracy: 0.7000 - val_loss: 0.8907
+Epoch 12/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9631 - loss: 0.1730 - val_accuracy: 0.7250 - val_loss: 0.8342
+Epoch 13/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9534 - loss: 0.1979 - val_accuracy: 0.5500 - val_loss: 1.1190
+Epoch 14/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.8965 - loss: 0.2241 - val_accuracy: 0.7000 - val_loss: 0.8081
+Epoch 15/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9742 - loss: 0.1328 - val_accuracy: 0.6250 - val_loss: 0.8962
+Epoch 16/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9388 - loss: 0.1610 - val_accuracy: 0.6500 - val_loss: 0.9570
+Epoch 17/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9418 - loss: 0.1674 - val_accuracy: 0.6250 - val_loss: 0.9920
+Epoch 18/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9593 - loss: 0.1176 - val_accuracy: 0.6750 - val_loss: 0.8416
+Epoch 19/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9787 - loss: 0.0956 - val_accuracy: 0.7000 - val_loss: 0.9680
+Epoch 20/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9267 - loss: 0.1619 - val_accuracy: 0.6750 - val_loss: 0.9921
+Training last ResNet block...
+Epoch 1/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 52s 2s/step - accuracy: 0.9385 - loss: 0.2704 - val_accuracy: 0.5750 - val_loss: 1.4608
+Epoch 2/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 37s 2s/step - accuracy: 0.9774 - loss: 0.1007 - val_accuracy: 0.6250 - val_loss: 1.2242
+Epoch 3/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 32s 2s/step - accuracy: 0.9769 - loss: 0.1243 - val_accuracy: 0.6500 - val_loss: 1.1795
+Epoch 4/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 34s 2s/step - accuracy: 0.9747 - loss: 0.0778 - val_accuracy: 0.7250 - val_loss: 0.9885
+Epoch 5/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9378 - loss: 0.1184 - val_accuracy: 0.6500 - val_loss: 1.9135
+Epoch 6/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9951 - loss: 0.0449 - val_accuracy: 0.7250 - val_loss: 0.9562
+Epoch 7/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9557 - loss: 0.1440 - val_accuracy: 0.7500 - val_loss: 1.3377
+Epoch 8/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9730 - loss: 0.0907 - val_accuracy: 0.7500 - val_loss: 0.7390
+Epoch 9/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9785 - loss: 0.1034 - val_accuracy: 0.6500 - val_loss: 1.5048
+Epoch 10/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9818 - loss: 0.0570 - val_accuracy: 0.7500 - val_loss: 0.8718
+Epoch 11/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9848 - loss: 0.0748 - val_accuracy: 0.7750 - val_loss: 0.7085
+Epoch 12/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9961 - loss: 0.0420 - val_accuracy: 0.6500 - val_loss: 1.4879
+Epoch 13/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9925 - loss: 0.0364 - val_accuracy: 0.6750 - val_loss: 1.1643
+Epoch 14/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9930 - loss: 0.0595 - val_accuracy: 0.7500 - val_loss: 1.0932
+Epoch 15/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9842 - loss: 0.0555 - val_accuracy: 0.6000 - val_loss: 1.5160
+Epoch 16/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9749 - loss: 0.1692 - val_accuracy: 0.7250 - val_loss: 1.3307
+Epoch 17/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9852 - loss: 0.0907 - val_accuracy: 0.7000 - val_loss: 1.5122
+Epoch 18/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9945 - loss: 0.0308 - val_accuracy: 0.7500 - val_loss: 1.7577
+Epoch 19/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 1.0000 - loss: 0.0168 - val_accuracy: 0.7500 - val_loss: 0.9725
+Epoch 20/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9815 - loss: 0.0673 - val_accuracy: 0.7000 - val_loss: 1.6596
+Training last two ResNet blocks...
+Epoch 1/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 52s 2s/step - accuracy: 0.8669 - loss: 0.3063 - val_accuracy: 0.8000 - val_loss: 1.3080
+Epoch 2/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 37s 2s/step - accuracy: 0.9905 - loss: 0.0590 - val_accuracy: 0.8250 - val_loss: 0.7240
+Epoch 3/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 32s 2s/step - accuracy: 0.9690 - loss: 0.0900 - val_accuracy: 0.7750 - val_loss: 0.9723
+Epoch 4/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 34s 2s/step - accuracy: 0.8274 - loss: 0.4946 - val_accuracy: 0.7000 - val_loss: 1.9015
+Epoch 5/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9715 - loss: 0.0793 - val_accuracy: 0.7750 - val_loss: 0.8405
+Epoch 6/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9692 - loss: 0.0929 - val_accuracy: 0.7750 - val_loss: 0.8457
+Epoch 7/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9692 - loss: 0.0767 - val_accuracy: 0.8000 - val_loss: 0.7042
+Epoch 8/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9843 - loss: 0.0489 - val_accuracy: 0.8250 - val_loss: 0.6689
+Epoch 9/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9836 - loss: 0.0427 - val_accuracy: 0.6750 - val_loss: 1.6786
+Epoch 10/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9976 - loss: 0.0282 - val_accuracy: 0.8000 - val_loss: 0.6198
+Epoch 11/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9665 - loss: 0.0900 - val_accuracy: 0.8250 - val_loss: 0.8945
+Epoch 12/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9644 - loss: 0.0698 - val_accuracy: 0.8250 - val_loss: 0.6315
+Epoch 13/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9561 - loss: 0.0792 - val_accuracy: 0.8500 - val_loss: 0.6634
+Epoch 14/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9837 - loss: 0.0376 - val_accuracy: 0.8000 - val_loss: 0.5797
+Epoch 15/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9891 - loss: 0.0447 - val_accuracy: 0.8000 - val_loss: 0.6048
+Epoch 16/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 36s 2s/step - accuracy: 0.9686 - loss: 0.0555 - val_accuracy: 0.8250 - val_loss: 1.0364
+Epoch 17/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9963 - loss: 0.0279 - val_accuracy: 0.8250 - val_loss: 0.7672
+Epoch 18/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 1.0000 - loss: 0.0196 - val_accuracy: 0.7750 - val_loss: 0.6838
+Epoch 19/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9968 - loss: 0.0196 - val_accuracy: 0.7750 - val_loss: 1.4987
+Epoch 20/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 1.0000 - loss: 0.0227 - val_accuracy: 0.8250 - val_loss: 0.4062
+Fine-tuning all layers...
+Epoch 1/20
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1720662111.769791  367235 asm_compiler.cc:369] ptxas warning : Registers are spilled to local memory in function 'input_add_reduce_fusion_48', 176 bytes spill stores, 176 bytes spill loads
+ptxas warning : Registers are spilled to local memory in function 'input_reduce_fusion', 44 bytes spill stores, 44 bytes spill loads
+ptxas warning : Registers are spilled to local memory in function 'loop_add_subtract_fusion_23', 4 bytes spill stores, 4 bytes spill loads
+
+20/20 ━━━━━━━━━━━━━━━━━━━━ 76s 2s/step - accuracy: 0.8684 - loss: 0.3099 - val_accuracy: 0.7000 - val_loss: 0.9578
+Epoch 2/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 37s 2s/step - accuracy: 0.8758 - loss: 0.3877 - val_accuracy: 0.7000 - val_loss: 1.2523
+Epoch 3/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 32s 2s/step - accuracy: 0.8668 - loss: 0.3749 - val_accuracy: 0.6750 - val_loss: 1.0228
+Epoch 4/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 34s 2s/step - accuracy: 0.8900 - loss: 0.4013 - val_accuracy: 0.7500 - val_loss: 1.1857
+Epoch 5/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.8893 - loss: 0.3410 - val_accuracy: 0.7250 - val_loss: 1.0333
+Epoch 6/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9305 - loss: 0.2530 - val_accuracy: 0.7750 - val_loss: 0.6908
+Epoch 7/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.8323 - loss: 0.3580 - val_accuracy: 0.6750 - val_loss: 1.0235
+Epoch 8/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 36s 2s/step - accuracy: 0.9077 - loss: 0.3031 - val_accuracy: 0.6250 - val_loss: 0.8942
+Epoch 9/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.8693 - loss: 0.3392 - val_accuracy: 0.6250 - val_loss: 1.0103
+Epoch 10/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9355 - loss: 0.1770 - val_accuracy: 0.6500 - val_loss: 1.0477
+Epoch 11/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 36s 2s/step - accuracy: 0.8738 - loss: 0.4557 - val_accuracy: 0.7000 - val_loss: 1.0960
+Epoch 12/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 36s 2s/step - accuracy: 0.9176 - loss: 0.2796 - val_accuracy: 0.8500 - val_loss: 0.6668
+Epoch 13/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.8954 - loss: 0.2369 - val_accuracy: 0.7250 - val_loss: 1.2103
+Epoch 14/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9750 - loss: 0.1415 - val_accuracy: 0.7750 - val_loss: 0.6844
+Epoch 15/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9440 - loss: 0.1500 - val_accuracy: 0.7000 - val_loss: 0.8079
+Epoch 16/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9273 - loss: 0.1985 - val_accuracy: 0.7500 - val_loss: 0.9452
+Epoch 17/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9355 - loss: 0.1684 - val_accuracy: 0.7000 - val_loss: 0.8694
+Epoch 18/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9574 - loss: 0.1263 - val_accuracy: 0.6750 - val_loss: 1.0766
+Epoch 19/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9362 - loss: 0.1673 - val_accuracy: 0.7500 - val_loss: 0.7149
+Epoch 20/20
+20/20 ━━━━━━━━━━━━━━━━━━━━ 35s 2s/step - accuracy: 0.9739 - loss: 0.1073 - val_accuracy: 0.6750 - val_loss: 1.0704
+Training complete. Final model saved as experiment5.keras
+Class indices: {'1_clear': 0, '2_cirrus': 1, '3_cumulus': 2, '4_fogvirgas': 3}
+
+Process finished with exit code 0

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Classification Results</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+        img { max-width: 100%; height: auto; }
+        pre { white-space: pre-wrap; word-wrap: break-word; }
+    </style>
+</head>
+<body>
+    <h1>Cloud Classification Results</h1>
+    <img src="{{ url_for('static', filename=image) }}" alt="Current cloud image">
+    <h2>Latest Results:</h2>
+    <pre>{{ results }}</pre>
+    <script>
+        setTimeout(function(){ location.reload(); }, 30000);
+    </script>
+</body>
+</html>
