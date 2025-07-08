@@ -2,20 +2,20 @@
 
 A machine learning system that automatically classifies cloud formations to assist telescope operators in making weather-related operational decisions at the Gemini North Observatory on Maunakea, Hawaii.
 
-## 🔭 Project Overview
+## Project Overview
 
 The Gemini North Telescope, located at 14,000 feet on Maunakea's summit, requires precise weather monitoring to protect its equipment and optimize observation time. This project enhances operators' ability to identify cloud-induced weather risks by implementing a real-time CNN-based classification system.
 
 **Key Achievement:** Developed a transfer-learned ResNet50 model achieving **85% accuracy** on cloud pattern classification, deployed as a real-time inference system integrated with existing cloud camera infrastructure.
 
-## 🎯 Problem Statement
+## Problem Statement
 
 Telescope operators at the Gemini Hilo Base Facility currently rely solely on manual interpretation of still images from cloud cameras to assess weather threats. This project automates cloud classification to provide operators with:
 - Real-time cloud category predictions every 20 seconds
 - Enhanced weather risk assessment capabilities
 - Reduced telescope downtime from unexpected cloud cover
 
-## 🧠 Technical Approach
+## Technical Approach
 
 ### Model Architecture
 - **Base Model:** Pre-trained ResNet50 (transfer learning)
@@ -39,7 +39,7 @@ Telescope operators at the Gemini Hilo Base Facility currently rely solely on ma
 - **Web Interface:** Flask-based dashboard for operators
 - **Infrastructure:** VM-based deployment with CPU optimization
 
-## 🚀 Features
+## Features
 
 - **Real-time Classification:** Automated analysis of cloud camera images
 - **Web Dashboard:** User-friendly interface displaying current conditions
@@ -47,7 +47,7 @@ Telescope operators at the Gemini Hilo Base Facility currently rely solely on ma
 - **Performance Optimized:** Multi-CPU processing for efficient inference
 - **Integration Ready:** Designed to integrate with existing Gemini systems
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Machine Learning:** TensorFlow/Keras, ResNet50, Transfer Learning
 - **Backend:** Python, Flask
@@ -55,14 +55,14 @@ Telescope operators at the Gemini Hilo Base Facility currently rely solely on ma
 - **Infrastructure:** Linux (Rocky Linux), VM deployment
 - **Data Processing:** NumPy, OpenCV, Pandas
 
-## 📊 Model Performance
+## Model Performance
 
 - **Final Accuracy:** 85% on test dataset
 - **Inference Speed:** Real-time processing (< 1 second per image)
 - **Model Size:** Optimized for production deployment
 - **Robustness:** Trained with extensive data augmentation
 
-## 🔧 Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 - Docker installed
@@ -92,21 +92,21 @@ pip install -r requirements.txt
 python web_app.py
 ```
 
-## 📈 Results & Impact
+## Results & Impact
 
 - **Operational Benefit:** Provides telescope operators with automated cloud risk assessment
 - **Accuracy Improvement:** 85% classification accuracy on real observatory data
 - **Response Time:** Real-time analysis reduces manual observation workload
 - **Scalability:** Containerized solution ready for production deployment
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - Expand to additional cloud camera locations
 - Implement daytime image classification
 - Develop more robust alerting system for control room integration
 - Continuous model improvement with operational data
 
-## 🏗️ System Requirements
+## System Requirements
 
 - **Minimum:** 4GB RAM, 2 CPU cores
 - **Recommended:** 8GB RAM, 4+ CPU cores
@@ -126,7 +126,7 @@ cloud_classification/
 └── static/                                # Static assets
 ```
 
-## 👥 Acknowledgments
+## Acknowledgments
 
 Developed during internship at Gemini Observatory/NOIRLab, with guidance from telescope operators and engineering staff. Special thanks to the Gemini team for providing real operational data and domain expertise.
 
