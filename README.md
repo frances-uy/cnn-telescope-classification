@@ -1,4 +1,4 @@
-# Atmospheric Cloud Classification for Gemini North Telescope
+# Cloud-based Threat Classification for Gemini North Telescope
 
 A machine learning system that automatically classifies cloud formations to assist telescope operators in making weather-related operational decisions at the Gemini North Observatory on Maunakea, Hawaii.
 
